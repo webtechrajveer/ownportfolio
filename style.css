@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #fff;
+    margin-bottom: 100px;
+    
+}
+.Portfolio{
+    font-size: 30px;
+    color: orange;
+    font-family: sans-serif;
+    margin-left: 30px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+    
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.nav-links a:hover{
+    color: orange;
+}
+.picture{
+    display: block;
+    margin-left: auto;
+    margin-right: 10px;
+    padding-top:  80px;
+    color: #fff;
+}
+.home-section{
+     color: orange;
+     margin-left: 100px;
+}
+.name{
+    font-size: 40px;
+    margin-left: 100px;
+}
+.about{
+    margin-left: 100px;
+    padding-top: 10px;
+}
+.socalmedia a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid orange;
+    border-radius: 50%;
+    font-size: 30px;
+    color: orange;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+.socalmedia a:hover{
+    background: orange;
+    color: #081b29;
+    box-shadow: 0 0 20px orange;
+}
+.button1 a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: orange;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5), 
+                0 0 15px rgba(52, 152, 219, 0.3), 
+                0 0 30px rgba(52, 152, 219, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.button1 a:hover {
+    background-color: blueviolet;
+    box-shadow: 0 0 10px rgba(41, 128, 185, 0.5), 
+                0 0 20px rgba(41, 128, 185, 0.3), 
+                0 0 40px rgba(41, 128, 185, 0.2);
+    transform: translateY(-3px);
+}
+
+
+.Skill{
+    padding-top: 90px;
+    text-align: center;
+    color: orange;
+    text-shadow: 2px 1px 5px;
+    font-size: 20px;
+    
+}
+
+.containers {
+  width: 50%; 
+  background-color: #ffffff; 
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.skills {
+  text-align: right; 
+  padding-top: 15px; 
+  padding-bottom: 15px; 
+  padding-right: 30px;
+  color: rgb(0, 0, 0); 
+  
+}
+
+.html {width: 90%; background-color: orange;} 
+.css {width: 80%; background-color:orange;} 
+.js {width: 65%; background-color: orange;} 
+.php {width: 60%; background-color: orange;} 
+.python{width: 40%; background-color: orange;} 
+
+
+.skills-container {
+    perspective: 1000px;
+    margin-left: 1050px;
+}
+
+.cube {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg) rotateY(30deg);
+    animation: rotate 3s infinite linear;
+}
+
+.face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    color: #282c34;
+    border: 2px solid #fff;
+    box-shadow: 1 2 10px rgba(0, 0, 0, 0.5);
+}
+
+.front  { transform: translateZ(100px); }
+.back   { transform: rotateY(180deg) translateZ(100px); }
+.right  { transform: rotateY(90deg) translateZ(100px); }
+.left   { transform: rotateY(-90deg) translateZ(100px); }
+.top    { transform: rotateX(90deg) translateZ(100px); }
+.bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+@keyframes rotate {
+    from {
+        transform: rotateX(-30deg) rotateY(0);
+    }
+    to {
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+.Education{
+    padding-top: 90px;
+    text-align: center;
+    color: orange;
+    text-shadow: 2px 1px 5px;
+    font-size: 20px;
+}
+.clg{
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    border: orange,1px solid;
+    border-width: 1px;
+    border-radius: 15px;
+    h3{
+        color: orange;
+        cursor: pointer;
+       } 
+}
+.twolth{
+    padding-left: 600px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    border: orange,1px solid;
+    border-width: 1px;
+    border-radius: 15px;
+    h3{
+        color: orange;
+        cursor: pointer;
+       } 
+}
+.tenth{
+    padding-left: 1000px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    border: orange,1px solid;
+    border-width: 1px;
+    border-radius: 15px;
+   h3{
+    color: orange;
+    cursor: pointer;
+   } 
+}
+
+
+.project{
+    padding-top: 80px;
+    text-align: center;
+    color: orange;
+    text-shadow: 2px 1px 5px;
+    font-size: 20px;
+}
+.project1{
+    h1{
+        font-size: 30px;
+        padding-left: 550px;
+        padding-top: 60px;
+        cursor: pointer;
+        
+    }
+    p{
+       margin-left: 200px;
+       margin-top: 20px;
+       font-size: 15px;
+    }
+}
+.project2{
+    h1{
+        font-size: 30px;
+        padding-left: 550px;
+        padding-top: 60px;
+        cursor: pointer;
+        
+    }
+    p{
+       margin-left: 400px;
+       margin-top: 20px;
+       font-size: 15px;
+    }
+   
+}
+.image{
+    margin: 0%;
+    margin-left: 400px;
+    margin-top: 20px;
+    cursor: pointer;
+    }
+
+.contact{
+    padding-top: 80px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: orange;
+    text-shadow: 2px 1px 5px;
+    font-size: 20px;
+}
+    input[type=text], select, textarea {
+        width: 100%; /* Full width */
+        padding: 12px; /* Some padding */ 
+        border: 1px solid #ccc; /* Gray border */
+        border-radius: 4px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 16px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+        resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+          
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+          
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+          
+    /* Add a background color and some padding around the form */
+    .container {
+        border-radius: 5px;
+        background-color: #000000;
+        padding: 20px;
+        max-width: 600px; /* Set a maximum width */
+        margin: 0 auto; /* Center the container */
+        color: white; /* Ensure the text is readable on a dark background */
+    }
+          
+    form label {
+        color: white; /* Ensure labels are readable */
+    }
+    
